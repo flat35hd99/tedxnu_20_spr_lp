@@ -18,9 +18,6 @@
     <div>
       <the-info-section></the-info-section>
     </div>
-    <div class="">
-      <p>fasdfasfd</p>
-    </div>
     <div>
       <the-requirements-section></the-requirements-section>
     </div>

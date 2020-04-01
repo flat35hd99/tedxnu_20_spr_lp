@@ -24,9 +24,6 @@
     <div>
       <contact-section></contact-section>
     </div>
-    <div class="">
-      <p>al;ksdfja</p>
-    </div>
   </div>
 </template>
 

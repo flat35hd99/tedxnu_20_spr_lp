@@ -49,6 +49,17 @@ export default {
     TheInfoSection,
     TheRequirementsSection,
     ContactSection,
+  },
+  mounted: function () {
+    const title = '求む、熱意ある学生 | TEDxNagoyaU'
+    const description = 'TEDxNagoyaUは名古屋大学でTEDxイベントを運営する学生のみで構成されたイベント運営団体です。'
+    document.title = title
+    document.querySelector("meta[property='og:title']")
+      .setAttribute('content', title)
+    document.querySelector("meta[name='description']")
+      .setAttribute('content', description)
+    document.querySelector("meta[property='og:description']")
+      .setAttribute('content', description)
   }
 }
 </script>

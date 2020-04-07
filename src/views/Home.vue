@@ -29,7 +29,7 @@
 
 <script>
 // @ is an alias to /src
-import TheFirstViewSection from '@/components/sections/TheFirstView.vue'
+import TheFirstViewSection from '@/components/sections/TheFirstView.vue' 
 import TheAboutSection from '@/components/sections/TheAboutSection.vue'
 import TheEventSection from '@/components/sections/TheEventSection.vue'
 import TheTeamSection from '@/components/sections/TheTeamSection.vue'

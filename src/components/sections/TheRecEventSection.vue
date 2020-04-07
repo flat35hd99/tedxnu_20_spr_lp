@@ -3,20 +3,18 @@
     <v-row>
       <v-col xs="12">
         <div>
-          <v-card :color="gray" id="setsumeikai">
+          <v-card id="setsumeikai">
             <v-card-title>新歓イベント</v-card-title>
             <v-card-subtitle>もしサークル選びの候補になったら</v-card-subtitle>
             <v-card-text>新メンバー募集のため、説明会とサロンイベントを開催します！</v-card-text>
             <v-row justify="left" class="mx-1">
               <v-col xs="12" sm="6" md="6" v-for="item in shinkanEvents" :key="item.title">
-                <div>
-                  <v-card>
-                    <v-img :src="item.img"></v-img>
-                    <v-card-title>{{item.title}}</v-card-title>
-                    <v-card-subtitle>{{item.subtitle}}</v-card-subtitle>
-                    <v-card-text>{{item.text}}</v-card-text>
-                  </v-card>
-                </div>
+                <v-card height="100%"><!--なんとこのheight="100%"だけで高さが揃ってしまう-->
+                  <v-img :src="item.img"></v-img>
+                  <v-card-title>{{item.title}}</v-card-title>
+                  <v-card-subtitle>{{item.subtitle}}</v-card-subtitle>
+                  <v-card-text>{{item.text}}</v-card-text>
+                </v-card>
               </v-col>
             </v-row>
           </v-card>

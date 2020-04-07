@@ -3,20 +3,18 @@
     <v-row>
       <v-col xs="12">
         <div>
-          <v-card :color="gray">
+          <v-card>
             <v-card-title>Teams</v-card-title>
             <v-card-subtitle>加入したらなにをする？</v-card-subtitle>
             <v-card-text>春から加入したメンバーは、7月（予定）のイベントに向けて以下の3つのチームに分かれて活動を行います。</v-card-text>
             <v-row justify="center" class="mx-1">
               <v-col xs="12" sm="6" md="4" v-for="item in teamContents" :key="item.title">
-                <div>
-                  <v-card>
-                    <v-img :src="item.img" alt=""></v-img>
-                    <v-card-title>{{item.title}}</v-card-title>
-                    <v-card-subtitle>{{item.subtitle}}</v-card-subtitle>
-                    <v-card-text>{{item.text}}</v-card-text>
-                  </v-card>
-                </div>
+                <v-card height="100%"><!--なんとこのheight="100%"だけで高さが揃ってしまう-->
+                  <v-img :src="item.img" alt=""></v-img>
+                  <v-card-title>{{item.title}}</v-card-title>
+                  <v-card-subtitle>{{item.subtitle}}</v-card-subtitle>
+                  <v-card-text>{{item.text}}</v-card-text>
+                </v-card>
               </v-col>
             </v-row>
           </v-card>

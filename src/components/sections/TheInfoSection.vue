@@ -3,7 +3,7 @@
     <v-row>
       <v-col>
         <div>
-          <v-card :color="gray">
+          <v-card>
             <v-card-title>Info</v-card-title>
             <v-card-subtitle>迷っているあなたへ</v-card-subtitle>
             <v-card-text>サークル・部活選びの参考に、TEDxNagoyaUの特徴やメンバーの声をまとめました！</v-card-text>

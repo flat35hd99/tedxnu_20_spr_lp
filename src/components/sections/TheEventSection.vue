@@ -3,20 +3,18 @@
     <v-row>
       <v-col xs="12">
         <div>
-          <v-card :color="gray">
+          <v-card>
             <v-card-title>Event Content</v-card-title>
             <v-card-subtitle>どんなイベント？</v-card-subtitle>
             <v-card-text>イベントは1日を通して行い、登壇者のトークだけでなく、参加者同士の交流も多くあるのが特徴的です。</v-card-text>
             <v-row justify="center" class="mx-1">
               <v-col xs="12" sm="6" md="4" v-for="item in eventContents" :key="item.title">
-                <div>
-                  <v-card>
-                    <v-img :src="item.img" alt=""></v-img>
-                    <v-card-title>{{item.title}}</v-card-title>
-                    <v-card-subtitle>{{item.subtitle}}</v-card-subtitle>
-                    <v-card-text>{{item.text}}</v-card-text>
-                  </v-card>
-                </div>
+                <v-card height="100%"><!--なんとこのheight="100%"だけで高さが揃ってしまう-->
+                  <v-img :src="item.img" alt=""></v-img>
+                  <v-card-title>{{item.title}}</v-card-title>
+                  <v-card-subtitle>{{item.subtitle}}</v-card-subtitle>
+                  <v-card-text>{{item.text}}</v-card-text>
+                </v-card>
               </v-col>
             </v-row>
           </v-card>

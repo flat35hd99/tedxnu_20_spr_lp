@@ -4,7 +4,7 @@
       <v-col xs="12" sm="10">
         <div>
           <v-card>
-            <v-img src="https://live.staticflickr.com/4614/28001906269_7c28edf9f3_o.jpg" alt=""></v-img>
+            <v-img src="https://live.staticflickr.com/4614/28001906269_7c28edf9f3_o.jpg"></v-img>
             <v-card-title>about us</v-card-title>
             <v-card-subtitle>TEDxNagoyaUについて</v-card-subtitle>
             <v-card-text>TEDxNagoyaUは学生のみで運営されるTED公認のTEDxイベント運営団体です。スピーカーを外部からお呼びし、プレゼンテーションを一緒に考えたり、協力してくださる企業の方々を探したり、マーケティングを行ったりと、イベント運営に必要なことをすべて自分たちで行っています。TEDxNagoyaU 2020に向けて、私たちと一緒に最高のイベントを作り上げませんか？</v-card-text>

@@ -20,7 +20,7 @@
                     color="primary"
                     large depressed
                     class="mx-auto"
-                    @click="$vuetify.goTo(item.btnLink)"
+                    :href="item.btnLink"
                     :disabled="item.disabled"
                     >{{item.btnName}}<!--fu****************************************k-->
                     </v-btn>
@@ -45,25 +45,17 @@ export default {
           title: "説明会に参加",
           date: "4/23, 5/7",
           text: "TEDxNagoyaUに加入を希望される方には必ず説明会に参加していただいています。もし参加が難しい場合は別途対応させていただきますので、Twitterやメールでご連絡ください。",
-          btnName: "説明会詳細",
-          btnLink: "#setsumeikai",
-          disabled: false,
-        },
-        {
-          title: "Salonに参加",
-          date: "4/30",
-          text: "夏の本番イベントに向けて活動していくには、どんなものを作り上げていくのかイメージできることが大事です。サロンイベントを経験することで、加入後も明確なイメージを持ちながら活動できます！",
-          btnName: null,
-          btnLink: null,
-          disabled: null,
+          btnName: "",
+          btnLink: "",
+          disabled: true,
         },
         {
           title: "応募",
           date: "4/23 ~ 5/12",
           text: "「TEDxNagoyaUにメンバーとして参加したい！」と意思が固まったら、下記フォームから必要事項を入力してください。後日入力していただいた連絡先に面接日程の調整案内を送らせていただきます。",
           btnName: "申込フォーム",
-          btnLink: null,
-          disabled: true,
+          btnLink: 'https://docs.google.com/forms/d/e/1FAIpQLSd1wmd46SLVDER3rDC5KQ8bawSKCXvldtMgk5bbK7y0jZWV-g/viewform?usp=sf_link',
+          disabled: false,
         },
         {
           title: "面接",
@@ -74,6 +66,13 @@ export default {
           disabled: null,
         }
       ],
+    }
+  },
+  methods: {
+    getCreatedUrl(url){
+      if(url===""){
+        location.href=""
+      }
     }
   }
 }
